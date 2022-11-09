@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f0e4;
+}
+
+header {
+  width: 100%;
+  background-color: #f2f0e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+header .logo {
+  font-size: 20px;
+  font-family: "DM Serif Display", serif;
+  text-transform: uppercase;
+  color: #0D0D0D;
+}
+
+.big-words {
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  color: #0D0D0D;
+  padding: 100px;
+}
+
+.BW1 {
+  color: #0D0D0D;
+}
+
+.BW2 {
+  color: #118c8c;
+}
+
+footer {
+  width: 100%;
+  background-color: #0D0D0D;
+  display: flex;
+  padding: 80px;
+}
+
+footer .footer-name {
+  color: #f2f0e4;
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+}
+
+footer .footer-email {
+  color: #f2f0e4;
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+}/*# sourceMappingURL=styles.css.map */
