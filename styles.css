@@ -30,7 +30,7 @@ header .logo {
   font-size: 50px;
   color: #0D0D0D;
   padding: 100px;
-  align-items: center;
+  justify-content: center;
 }
 
 .BW1 {
