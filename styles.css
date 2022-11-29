@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@1&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -19,26 +19,88 @@ header {
 }
 
 header .logo {
-  font-size: 20px;
+  font-size: 28px;
   font-family: "DM Serif Display", serif;
   text-transform: uppercase;
   color: #0D0D0D;
+  text-decoration: none;
+}
+
+header .menu-btn img {
+  width: 45px;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #0D0D0D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+nav a {
+  color: #f2f0e4;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-family: "DM Serif Display", serif;
+  position: relative;
+}
+
+nav a:hover::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #f2f0e4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.button1 {
+  background-color: #118c8c;
+  border: none;
+  color: #f2f0e4;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button :hover {
+  background-color: #f23827;
 }
 
 .big-words {
   font-family: "DM Serif Display", serif;
-  font-size: 50px;
   color: #0D0D0D;
-  padding: 100px;
-  justify-content: center;
+  padding: 100px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .BW1 {
   color: #0D0D0D;
+  font-size: 80px;
 }
 
 .BW2 {
   color: #118c8c;
+  font-size: 100px;
 }
 
 footer {
@@ -60,4 +122,102 @@ footer .footer-email {
   color: #f2f0e4;
   font-family: "DM Serif Display", serif;
   font-size: 16px;
+}
+
+.about-me {
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 582px;
+  height: auto;
+}
+
+.about-name {
+  font-family: "DM Serif Display", serif;
+  color: #118c8c;
+  font-size: 35pt;
+}
+
+.sub-c {
+  font-family: "DM Serif Text", serif;
+  font-style: italic;
+  font-size: 20pt;
+  color: #118c8c;
+}
+
+.bio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  color: #0D0D0D;
+  text-align: justify;
+}
+
+.skills {
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-e .skill-s {
+  font-family: "DM Serif Display", serif;
+  color: #f23827;
+  font-size: 35pt;
+}
+
+.e-list .e-two .s-list .s-two .s-three {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+}
+
+.sub-nav {
+  overflow: hidden;
+  background-color: #0D0D0D;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+}
+
+.sub-nav a {
+  display: inline-block;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: #f2f0e4;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.sub-nav sub-about:hover {
+  color: #118c8c;
+}
+
+.sub-nav sub-about.active {
+  color: #118c8c;
+}
+
+.sub-nav sub-skills:hover {
+  color: #f23827;
+}
+
+.sub-nav sub-skills.active {
+  color: #f23827;
+}
+
+.sub-nav sub-contact:hover {
+  color: #94569D;
+}
+
+.sub-nav sub-contact.active {
+  color: #94569D;
 }/*# sourceMappingURL=styles.css.map */
