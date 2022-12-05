@@ -65,23 +65,24 @@ nav a:hover::after {
 }
 
 .button1 {
+  display: inline-block;
   background-color: #118c8c;
   border: none;
   color: #f2f0e4;
-  text-decoration: none;
+  margin: 4px 2px;
   padding: 10px 20px;
+  transition: 0.3s ease-in-out;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
 }
 
-.button :hover {
+.button1:hover {
   background-color: #f23827;
+  color: #f2f0e4;
 }
 
 .big-words {
@@ -91,6 +92,7 @@ nav a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
 }
 
 .BW1 {
@@ -104,11 +106,13 @@ nav a:hover::after {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
   background-color: #0D0D0D;
   display: flex;
   flex-direction: column;
-  padding: 80px;
+  padding: 70px;
   align-items: center;
 }
 
@@ -122,6 +126,68 @@ footer .footer-email {
   color: #f2f0e4;
   font-family: "DM Serif Display", serif;
   font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive image gallery rules begin*/
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects > li {
+  flex: 1 1 auto; /* or flex: auto; */
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+}
+
+.projects::after {
+  content: "";
+  flex-grow: 999;
+}
+
+.projects li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  color: #f2f0e4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 25px;
+}
+
+.p-name {
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.medium {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.projects li:hover .overlay {
+  transform: scale(1);
 }
 
 .about-me {
@@ -154,7 +220,7 @@ img {
 
 .bio {
   font-family: "Montserrat", sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   color: #0D0D0D;
   text-align: justify;
 }
@@ -163,18 +229,40 @@ img {
   padding: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: center;
+  text-align: center;
 }
 
-.skill-e .skill-s {
+.skill-name {
   font-family: "DM Serif Display", serif;
   color: #f23827;
   font-size: 35pt;
 }
 
-.e-list .e-two .s-list .s-two .s-three {
+.s-list {
   font-family: "Montserrat", sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
+}
+
+.contact-sect {
+  padding: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-name {
+  font-family: "DM Serif Display", serif;
+  color: #94569D;
+  font-size: 35pt;
+  text-align: center;
+}
+
+.contact-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14pt;
+  color: #0D0D0D;
+  text-align: center;
 }
 
 .sub-nav {
@@ -183,7 +271,7 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   font-family: "DM Serif Display", serif;
   font-size: 30px;
@@ -194,30 +282,18 @@ img {
   margin-left: 150px;
   margin-right: 150px;
   color: #f2f0e4;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
 }
 
-.sub-nav sub-about:hover {
+a.sub-about:hover, a.sub-about:active {
   color: #118c8c;
 }
 
-.sub-nav sub-about.active {
-  color: #118c8c;
-}
-
-.sub-nav sub-skills:hover {
+a.sub-skills:hover, a.sub-skills:active {
   color: #f23827;
 }
 
-.sub-nav sub-skills.active {
-  color: #f23827;
-}
-
-.sub-nav sub-contact:hover {
-  color: #94569D;
-}
-
-.sub-nav sub-contact.active {
+a.sub-contact:hover, a.sub-contact:active {
   color: #94569D;
 }/*# sourceMappingURL=styles.css.map */
