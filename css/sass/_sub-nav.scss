@@ -8,14 +8,20 @@
     text-align: center;
     font-family:'DM Serif Display', serif;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    @media screen and (max-width:430px){
+      font-size: 24px;
+
+    }
   }
   
   .sub-nav a {
-    display: inline-block;
-    margin-left: 150px;
-    margin-right: 150px;
+    display: block;
+    padding: 14px 16px;
+    width: 100%;
     color: $primary-3;
-    padding: 12px 14px;
     text-decoration: none;
   }
   
