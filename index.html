@@ -11,78 +11,133 @@
 <body>
     <header class="header">
             <a href="./" class="logo">AGA</a>
-        <a href="#" class="menu-btn">
+        <button class="menu-btn">
             <img src="./assets/menu.svg" alt="">
-        </a>
+        </button>
     </header>
     <nav>
         <a href="./index.html">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./index.html">Projects</a>
         <a href="./about.html">About</a>
-      </nav>
+        <a href="./about.html">Contact</a>
+    </nav>
     <div class="big-words">
-        <div class="BW1">I am a(n)</div>
-        <div class="BW2">Graphic Designer</div>
-        <button class="button1"><a href="./about.html"> About Me </a></button>
+        <div>
+            <div class="BW1">I am a(n)</div>
+            <div id="slideshow">
+                <div class="BW2">Graphic Designer</div>
+            </div>
+            <br>
+            <p><button class="button1"><a href="./about.html"> About Me </a></button></p>
+        </div>
     </div>
 
-    <div class="grid">
-        <div class="color-row">
-          <div class="image-red1"></div>  
-          <div class="image-red2"></div>  
-          <div class="image-red3"></div>  
-        </div> 
-        <div class="color-row">
-          <div class="image-yellow1"></div>  
-          <div class="image-yellow2"></div>  
-          <div class="image-yellow3"></div>
-        </div>  
-        <div class="color-row">
-          <div class="image-greeen1"></div>  
-          <div class="image-green2"></div>  
-          <div class="image-green3"></div>  
-        </div>  
-        <div class="color-row">
-          <div class="image-blue1"></div>  
-          <div class="image-blue2"></div>  
-          <div class="image-blue3"></div>  
-        </div> 
-        <div class="color-row">
-            <div class="image image-10"></div>  
-            <div class="image image-11"></div>  
-            <div class="image image-12"></div>  
-        </div>
-    </div> 
-
+    <div class="container">
+        <div class="proj-grid">
+            <div class="red1">
+                <img src="./assets/trixie.png" class="proj-img" alt="A Barbie Girl: The Drag Queen that Embodies Camp">
+                <div class="overlay">
+                    <h2 class="p-name">A Barbie Girl: The Drag Queen that Embodies Camp</h2>
+                    <p class="medium">Editorial Design & Layout</p>
+                </div>
+            </div>  
+            <div class="red2">
+                <img src="./assets/muertitos-crop.png" class="proj-img" alt="Tierra y Libertad">
+                <div class="overlay">
+                    <h2 class="p-name">Tierra y Libertad</h2>
+                    <p class="medium">Illustration</p>
+                </div>     
+            </div>
+            <div class="red3">
+                <img src="./assets/bookman.jpg" class="proj-img" alt="Typeface Reasearch: Bookman">
+                <div class="overlay">
+                    <h2 class="p-name">Typeface Research: Booman</h2>
+                    <p class="medium">Editorial Design & Layout</p>
+                </div>
+            </div>  
     
-    <ul class="projects">
-        <li class="reds">
-            <img src="./assets/trixie.png" alt="A Barbie Girl: The Drag Queen that Embodies Camp">
-            <div class="overlay">
-                <h2 class="p-name">A Barbie Girl: The Drag Queen that Embodies Camp</h2>
-                <p class="medium">Editorial Design & Layout</p>
+            <div class="yellow1">
+                <img src="./assets/La Tam.jpg" class="proj-img" alt="La Tamalada">
+                <div class="overlay">
+                    <h2 class="p-name">La Tamalada</h2>
+                    <p class="medium">Poster Design</p>
+                </div>     
+            </div>  
+            <div class="yellow2">
+                <img src="./assets/Wes Andy.jpg" class="proj-img" alt="The Fantastic Mr. Anderson">
+                <div class="overlay">
+                    <h2 class="p-name">The Fantastic Mr. Anderson</h2>
+                    <p class="medium">Editorial Design & Layout</p>
+                </div>
+            </div>  
+            <div class="yellow3">
+                <img src="./assets/Mind-Env.jpg" class="proj-img" alt="Your Mind is Your Environment">
+                <div class="overlay">
+                    <h2 class="p-name">Your Mind is Your Environment</h2>
+                    <p class="medium">Editorial Design & Layout</p>
+                </div>
             </div>
-        </li>
-        <li>
-            <img src="./assets/muertitos.png" alt="Tierra y Libertad">
-            <div class="overlay">
-                <h2 class="p-name">Tierra y Libertad</h2>
-                <p class="medium">Illustration</p>
-            </div>
-        </li>
-        <li>
-            <img src="./assets/bookman.jpg" alt="Typeface Reasearch: Bookman">
-            <div class="overlay">
-                <h2 class="p-name">Typeface Research: Booman</h2>
-                <p class="medium">Editorial Design & Layout</p>
-            </div>
-        </li>
-    </ul>
+            <div class="green1">
+                <img src="./assets/Sunday Scaries.png" class="proj-img" alt="Avoid the Midterm Sunday Scaries This October">
+                <div class="overlay">
+                    <h2 class="p-name">Avoid the Midterm Sunday Scaries This October</h2>
+                    <p class="medium">Illustration</p>
+                </div>     
+            </div>  
+            <div class="green2">
+                <img src="./assets/Hops.jpg" class="proj-img" alt="Hops">
+                <div class="overlay">
+                    <h2 class="p-name">Hops</h2>
+                    <p class="medium">Brand Identity</p>
+                </div>
+            </div>  
+            <div class="green3">
+                <img src="./assets/Somos Aggies.png" class="proj-img" alt="Somos Aggies">
+                <div class="overlay">
+                    <h2 class="p-name">Somos Aggies</h2>
+                    <p class="medium">Illustration</p>
+                </div>
+            </div>  
+            <div class="blue1">
+                <img src="./assets/Earth.jpg" class="proj-img" alt="Earth Day">
+                <div class="overlay">
+                    <h2 class="p-name">Earth Day</h2>
+                    <p class="medium">Illustration</p>
+                </div>     
+            </div>  
+            <div class="blue2">
+                <img src="./assets/Back2School.png" class="proj-img" alt="Back to School">
+                <div class="overlay">
+                    <h2 class="p-name">Back to School: Fall 2022</h2>
+                    <p class="medium">Illustration</p>
+                </div>
+            </div>  
+            <div class="blue3">
+                <img src="./assets/Melodic.jpg" class="proj-img" alt="Melodic Movements">
+                <div class="overlay">
+                    <h2 class="p-name">Melodic Movements</h2>
+                    <p class="medium">Editorial Design & Layout</p>
+                </div>
+            </div>  
+        </div> 
+    </div>
 
     <footer class="footer-contact">
-         <h1 class="footer-name">Annette Guerra-Armendariz</h1>
-         <h2 class="footer-email">let's create: netty.armendariz@gmail.com</h2>
+         <p class="footer-name">Annette Guerra-Armendariz</p>
+         <p class="footer-email">let's create: netty.armendariz@gmail.com</p>
+         <br>
+         <div class="contact-btns">
+            <button class="social-btn">
+                <a href="https://www.linkedin.com/in/annette-guerra-armendariz">
+                    <img src="./assets/linkedin.svg" class="social" alt="LinkedIn">
+                </a>
+            </button>
+            <button class="social-btn">
+                <a href="https://www.behance.net/annettega">
+                    <img src="./assets/square-behance.svg" class="social" alt="Behance">
+                </a>
+            </button>
+         </div>
     </footer>
     
 </body>

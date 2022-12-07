@@ -1,10 +1,9 @@
-const openNavButton = document.querySelector("#open-nav");
+const navButton = document.querySelector(".menu-btn");
 const closeNavButton = document.querySelector("#close-nav");
 const nav = document.querySelector("nav");
 
-openNavButton.addEventListener("click", function () {
-    nav.classList.toggle("hide");
-});
-closeNavButton.addEventListener("click", function () {
-    nav.classList.toggle("hide");
+navButton.addEventListener("click", function () {
+    console.log("clicked")
+    nav.classList.toggle("open");
+    this.classList.toggle("open");
 });
