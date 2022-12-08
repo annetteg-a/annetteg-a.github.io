@@ -582,7 +582,7 @@ footer .footer-email {
   }
 }
 
-.skills {
+.skills-sect {
   padding: 200px;
   display: flex;
   flex-direction: column;
@@ -590,7 +590,7 @@ footer .footer-email {
   text-align: center;
 }
 @media screen and (max-width: 430px) {
-  .skills {
+  .skills-sect {
     padding: 200px 50px;
   }
 }
